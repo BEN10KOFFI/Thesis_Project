@@ -1,3 +1,6 @@
+# main implmenetation of the generative feature training and
+# corresponding postprocessing
+
 import torch
 import numpy as np
 import tqdm

@@ -1,3 +1,6 @@
+# Main script for the comparison of a plain neural network training
+
+
 import torch
 import argparse
 from src.get_setting import getSetting
@@ -116,8 +119,9 @@ for trial in range(n_trials):
 
     model = TwoLayerNN(act, 100, points.shape[1], bias, cplx).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
-    iterations = 40000
+    iterations = 100000
     val_mse = -1
+    print(best_lam)
 
     for i in (progress_bar := tqdm.tqdm(range(iterations))):
         preds = model(points).squeeze()

@@ -1,3 +1,8 @@
+# File for loading the UCI datasets
+#
+# copied and adapted from
+# https://github.com/rhshi/sparse-rf
+
 import numpy as np
 from scipy.io import loadmat
 

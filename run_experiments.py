@@ -1,3 +1,5 @@
+# runs the experiments for GFT and GFT-p from the numerical section
+
 from src.generative_features import parameter_search, train_generative_features
 import torch
 import argparse
@@ -37,7 +39,7 @@ elif inp.activation == "sigmoid":
     bias = True
 elif inp.activation == "cosine":
     act = lambda x: torch.cos(torch.pi * x)
-    bias=True
+    bias = True
 else:
     raise ValueError("Unknown activation")
 
@@ -103,7 +105,11 @@ for trial in range(n_trials):
     post_mses.append(post_mse.item())
 
 
-title = "Setting {0}, functions {1}\n".format(setting, synthetic_functions)
+title = (
+    "Setting {0}, functions {1}, activation ".format(setting, synthetic_functions)
+    + inp.activation
+    + "\n"
+)
 write_string1 = "Avg MSE of the generative model for regularization strength {0:.2E} and {2} features is: {1:.2E}\n".format(
     gen_params[0], np.mean(gen_mses), gen_params[1]
 )

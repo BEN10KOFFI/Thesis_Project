@@ -1,3 +1,5 @@
+# generates training and test datasets for the different settings
+
 import torch
 import src.get_dataset
 
@@ -34,8 +36,8 @@ def getSetting(synthetic_functions, setting, n_points=None):
             return torch.sin(torch.sum(x, -1)) + torch.sum(x**2, -1) ** 2
 
         def shifted_norm(x):
-            return torch.sum(torch.abs(x - 0.5), -1)
-            
+            return torch.sqrt(torch.sum(torch.abs(x - 0.5), -1))
+
         def sqrt_Friedmann1(x):
             return torch.sqrt(Friedmann1(x))
 
