@@ -1,7 +1,7 @@
 # generates training and test datasets for the different settings
 
 import torch
-import src.get_dataset
+import src.get_dataset as get_dataset
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
