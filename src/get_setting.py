@@ -122,7 +122,6 @@ def getSetting(synthetic_functions, setting, n_points=None):
             "telemonitoring-total",
             "skillcraft",
         ]
-        # points,fun_vals,points_test,fun_vals_test=load_ds.load(ds_names[setting])
         points, points_test, fun_vals, fun_vals_test = get_dataset.getDataset(
             ds_names[setting]
         )
