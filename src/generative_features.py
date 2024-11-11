@@ -48,7 +48,6 @@ class LearnedRFFDual(torch.nn.Module):
         return torch.randn((N, self.dim), device=device)
 
     def sample_w(self, N):
-        # print(N,self.dim)
         latent = self.sample_latent(N)
         w = self.generator(latent)
         return w
@@ -78,7 +77,6 @@ class LearnedRFFDual(torch.nn.Module):
         w, b, A = self.get_wb()
         preds = torch.real(torch.mv(A, b))
         mse = torch.mean((preds - self.fun_vals) ** 2, -1)
-        # prior_points=self.points+0.01*(torch.rand_like(self.points)-.5)
         if self.prior_lam != 0:
             prior_points = (
                 torch.rand((self.n_prior_points, self.points.shape[1]), device=device)
@@ -194,9 +192,7 @@ def train_generative_features(
     bias=False,
 ):
     n_features_train = 100 if n_features_train is None else n_features_train
-    n_prior_points = 1000  # (
-    #    max(1000, points.shape[0]) if n_prior_points is None else n_prior_points
-    # )
+    n_prior_points = 1000 
 
     model = LearnedRFFDual(
         points,
@@ -246,7 +242,6 @@ def train_generative_features(
                 loss.item(), mse.item(), val_mse
             )
         )
-    # model.load_state_dict(best_parameters)
     gen_mse = -1
     if val_points is not None:
         gen_mse_sum = 0
@@ -298,8 +293,6 @@ def train_generative_features(
                 loss.item(), mse.item(), val_mse.item()
             )
         )
-        # progress_bar.set_description("Loss: {0:.2E}".format(loss.item()))
-    # w_finder.load_state_dict(best_parameters)
     post_mse = -1
     if val_points is not None:
         w_finder.load_state_dict(best_parameters)
@@ -327,7 +320,7 @@ def model_selection(
 ):
 
     if prior_lam_choices is None:
-        prior_lam_choices = [0e-1]  # [0.0, 1e-4, 1e-3, 1e-2, 1e-1, 1.0]
+        prior_lam_choices = [0.0, 1e-4, 1e-3, 1e-2, 1e-1, 1.0]
     if n_features_train_choices is None:
         n_features_train_choices = [100]
 

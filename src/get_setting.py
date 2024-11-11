@@ -8,7 +8,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def getSetting(synthetic_functions, setting, n_points=None):
     if synthetic_functions:
-        # functions from Lauras Paper
         def Friedmann1(x):
             return (
                 10 * torch.sin(torch.pi * x[:, 0] * x[:, 1])
