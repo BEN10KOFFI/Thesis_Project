@@ -1,6 +1,6 @@
 # Generative Feature Training of Thin 2-Layer Networks
 
-This repository contains the implementations for the paper ["Generative Feature Training of Thin 2-Layer Networks"](https://arxiv.org/abs/2411.xxxxx). The code is written in PyTorch (version 2.4).
+This repository contains the implementations for the paper ["Generative Feature Training of Thin 2-Layer Networks"](https://arxiv.org/abs/2411.06848). The code is written in PyTorch (version 2.4).
 
 Do not hesitate to contact us (contact details can be found [here](https://johertrich.github.io) and [here](https://www.tu-chemnitz.de/mathematik/invimg/index.en.php)), if you have any questions.
 
@@ -43,7 +43,7 @@ The script `neural_network.py` starts the comparison for neural networks with th
 @article{HN2024,
   title={Generative Feature Training of Thin 2-Layer Networks},
   author={Hertrich, Johannes and Neumayer, Sebastian},
-  journal={arXiv preprint arXiv:2411.xxxxx},
+  journal={arXiv preprint arXiv:2411.06848},
   year={2024}
 }
 ```
