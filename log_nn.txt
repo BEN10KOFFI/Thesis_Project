@@ -1,0 +1,16 @@
+Setting 0, lam 0.00E+00, functions True, activation Fourier
+Avg MSE is: 1.31E-04
+
+
+Setting 0, lam 0.00E+00, functions True, activation gabor
+Avg MSE is: 1.64E-02
+
+
+Setting 1, lam 1.00E-04, functions True, activation Fourier
+Avg MSE is: 2.47E-03
+
+
+Setting 1, lam 0.00E+00, functions True, activation gabor
+Avg MSE is: 7.61E-02
+
+
