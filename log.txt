@@ -1,0 +1,70 @@
+Setting 0, functions True, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 100 features is: 4.00E-07
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 100 features is: 4.65E-08
+
+
+Setting 0, functions True, activation gabor
+Avg MSE of the generative model for regularization strength 0.00E+00 and 100 features is: 2.63E-04
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 100 features is: 1.34E-04
+
+
+Setting 0, functions False, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 100 features is: 9.12E-07
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 100 features is: 3.93E-07
+
+
+Setting 0, functions True, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 100 features is: 2.59E-07
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 100 features is: 9.51E-08
+
+
+Setting 0, functions True, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 100 features is: 2.88E-07
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 100 features is: 7.20E-08
+
+
+Setting 0, functions True, activation gabor
+Avg MSE of the generative model for regularization strength 0.00E+00 and 100 features is: 2.27E-04
+Avg MSE of the postprocessing for regularization strength 1.00E-04 and 100 features is: 2.03E-04
+
+
+Setting 0, functions True, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 100 features is: 2.88E-07
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 100 features is: 7.20E-08
+
+
+Setting 99, functions True, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 100 features is: 3.84E-01
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 100 features is: 3.50E-01
+
+
+Setting 99, functions True, activation gabor
+Avg MSE of the generative model for regularization strength 1.00E-04 and 100 features is: 2.11E-01
+Avg MSE of the postprocessing for regularization strength 1.00E-04 and 100 features is: 1.16E-01
+
+
+Setting 99, functions True, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 200 features is: 2.95E-01
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 200 features is: 2.77E-01
+
+
+Setting 99, functions True, activation gabor
+Avg MSE of the generative model for regularization strength 1.00E-04 and 200 features is: 5.84E-02
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 200 features is: 6.61E-04
+
+
+Setting 99, functions True, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 200 features is: 2.95E-01
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 200 features is: 2.77E-01
+
+
+Setting 99, functions True, activation Fourier
+Avg MSE of the generative model for regularization strength 0.00E+00 and 200 features is: 2.95E-01
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 200 features is: 2.77E-01
+
+
+Setting 99, functions True, activation gabor
+Avg MSE of the generative model for regularization strength 1.00E-04 and 200 features is: 5.84E-02
+Avg MSE of the postprocessing for regularization strength 0.00E+00 and 200 features is: 6.61E-04
+
+
